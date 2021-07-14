@@ -7,4 +7,11 @@ RSpec.describe User do
 
     expect(user_1).to be_an_instance_of(User)
   end
+
+  it "has attributes" do
+    user_1 = User.new("Sal")
+
+    expect(user_1.name).to eq("Sal")
+
+  end
 end
