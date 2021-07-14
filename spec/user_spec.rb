@@ -12,6 +12,7 @@ RSpec.describe User do
     user_1 = User.new("Sal")
 
     expect(user_1.name).to eq("Sal")
+    expect(user_1.jokes).to eq([])
 
   end
 end
