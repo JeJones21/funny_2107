@@ -39,5 +39,10 @@ RSpec.describe OpenMic do
     user_2.learn(joke_2)
 
     expect(open_mic.repeated_jokes?).to eq(false)
+
+    user_1.learn(joke_1)
+
+    # expect(open_mic.repeated_jokes?).to eq(true)
+
   end
 end
