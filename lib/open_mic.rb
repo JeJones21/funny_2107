@@ -9,4 +9,9 @@ class OpenMic
     @date = info[:date]
     @performers = []
   end
+
+  def welcome(human)
+    @performers << human
+  end
+
 end
