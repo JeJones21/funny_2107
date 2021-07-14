@@ -14,4 +14,11 @@ class OpenMic
     @performers << human
   end
 
+  def repeated_jokes?
+    if @performers == @jokes
+      return true
+    else
+      false
+    end
+  end
 end
