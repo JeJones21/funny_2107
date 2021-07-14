@@ -26,7 +26,7 @@ RSpec.describe User do
     expect(user_1.jokes).to eq([joke_1, joke_2])
   end
 
-  it "can teach other users the jokes" do
+  it "can teach other users the jokes and check them by ID" do
     user_1 = User.new("Sal")
     user_2 = User.new("Ali")
     joke_1 = Joke.new(22, "Why did the strawberry cross the road?", "Because his mother was in a jam.")
@@ -38,6 +38,9 @@ RSpec.describe User do
     user_1.tell(user_2, joke_2)
 
     expect(user_2.jokes).to eq([joke_1, joke_2])
+    expect(user_2.joke_by_id(22)).to eq(joke_1)
+    expect(user_2.joke_by_id(13)).to eq(joke_2)
   end
+
 
 end
