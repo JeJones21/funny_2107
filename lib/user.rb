@@ -12,5 +12,10 @@ class User
     @jokes << joke
   end
 
+  def tell(user, joke)
+    #user_1 has to tell the user_2 the joke
+    #This one took me wayyyy tooooo long.. Overthought it.
+    user.learn(joke)
+  end
 
 end
