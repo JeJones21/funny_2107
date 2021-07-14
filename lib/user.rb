@@ -18,4 +18,11 @@ class User
     user.learn(joke)
   end
 
+  def joke_by_id(id)
+    @jokes.find_all do |joke|
+      if joke.id == id
+        return joke
+      end
+    end
+  end
 end
