@@ -13,5 +13,6 @@ RSpec.describe OpenMic do
     open_mic = OpenMic.new({location: "Comedy Works", date: "11-20-18"})
 
     expect(open_mic.location).to eq("Comedy Works")
+    expect(open_mic.date).to eq("11-20-18")
   end
 end
